@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches_with_medias",
+  "info": {
+    "name": "MatchesWithMedia",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Team1": {
+      "type": "string"
+    },
+    "Team2": {
+      "type": "string"
+    },
+    "score1": {
+      "type": "string"
+    },
+    "score2": {
+      "type": "string"
+    },
+    "wicket1": {
+      "type": "string"
+    },
+    "wicket2": {
+      "type": "string"
+    },
+    "winer": {
+      "type": "string"
+    },
+    "overplay1": {
+      "type": "string"
+    },
+    "overplay2": {
+      "type": "string"
+    },
+    "totalovers": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "match": {
+      "type": "string"
+    }
+  }
+}
